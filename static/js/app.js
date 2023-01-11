@@ -59,3 +59,51 @@ data.forEach((dataRow) => {
 //     Looped through each object in the array
 //     Appended a row to the HTML table
 //     Added each value from the object into a cell
+
+// Add Filters
+// Data-Driven Documents (D3 for short) is a JavaScript library that adds interactive functionality, such as when users click a button to filter a table
+// We'll need to add a second function to our code that will focus on filtering the table we just built
+// Since we're adding a date function, we need to create a couple of variables to hold our date data, both filtered and unfiltered
+function handleClick() {
+    let date = d3.select("#datetime").property("value");
+// The .select() function is a very common one used in D3. It will select the very first element that matches our selector string: "#datetime"
+//  The selector string is the item we're telling D3.js to look for.
+// With d3.select("#datetime"), for example, we're telling D3 to look for the #datetime id in the HTML tags
+// By chaining .property("value"); to the d3.select function, we're telling D3 not only to look for where our date values are stored on the webpage,
+//  but to actually grab that information and hold it in the "date" variable.
+
+// Now we need to set a default filter and save it to a new variable.
+// Our default filter will actually be the original table data because we want users to refine their search on their own terms
+let filteredData = tableData;
+//  By setting the filteredData variable to our raw data, we're basically using it as a blank slate
+// The function we're working on right now will be run each time the filter button is clicked on the website
+//  If no date has been entered as a filter, then all of the data will be returned instead
+
+// Use the “If” Statement
+if (date) {
+    filteredData = filteredData.filter(row => row.datetime === date);
+  };
+// We’re applying a filter method that will match the datetime value to the filtered date value.
+// Our handleClick() function tells the code what to do when an event occurs (such as someone clicking a filter button), and it can apply that filtered data using an if statement
+
+// Build the Filtered Table
+
+// Thankfully, we've already set up a function to build a table: buildTable();. Now we just need to call it
+// We're building the function with the filtered data, so we'll use that variable as our argument
+buildTable(filteredData);
+};
+
+// Listen for the Event
+// Another aspect of D3.js is that it can listen for events that occur on a webpage, such as a button click
+// The next code we add will be tied to the filter button we'll build on our webpage
+d3.selectAll("#filter-btn").on("click", handleClick);
+// Our selector string contains the id for another HTML tag
+// (We'll assign a unique id to a button element in the HTML called "filter-btn"
+//  By adding this, we're linking our code directly to the filter button
+// Also, by adding .on("click", handleClick);, we're telling D3 to execute our handleClick() function when the button with an id of filter-btn is clicked
+
+// Build the Final Table
+// There is only a single step left before we can build the HTML component of the webpage: making sure the table loads as soon as the page does
+// At the very end of the code, we'll call our buildTable function once more—this time using the original data we've imported
+// Once this function is called, it will create a basic table filled with row upon row of unfiltered data pulled straight from our array
+buildTable(tableData);

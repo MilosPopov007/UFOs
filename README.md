@@ -49,5 +49,5 @@ Our users can enter search criteria, "mouse click" or "keypress" will run our co
 
 * Additional recommendations for further development might include improved user experience based on the user’s interests and previous actions. We might change the filter options, add additional filters or remove existing ones.
 
-By using certain web development tools, a dynamic web page can display in the language of the region a site visitor is viewing the page from. This gives our site content a more familiar voice, as well as further personalizing the overall experience. Adding that option will likely increase our UFOs audience around the world.
+* By using certain web development tools, a dynamic web page can display in the language of the region a site visitor is viewing the page from. This gives our site content a more familiar voice, as well as further personalizing the overall experience. Adding that option will likely increase our UFOs audience around the world.
 

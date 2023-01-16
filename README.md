@@ -41,3 +41,6 @@ Our users can enter search criteria, "mouse click" or "keypress" will run our co
 
 ![This is an image](https://github.com/MilosPopov007/UFOs/blob/main/Java_png2.png)
 
+
+### Summary:
+

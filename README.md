@@ -17,6 +17,12 @@ The array containing UFO sightings is quite significant. To provide a more in-de
 ![This is an image](https://github.com/MilosPopov007/UFOs/blob/main/Web_page.png)
 
 
+
 Each element in [HTML](https://github.com/MilosPopov007/UFOs/blob/main/index.html) file will have the same "id" as the object properties in the data.js file. We'll create a new function that saves the element, value, and id of the filter that was changed. Filters will be updated on user input.
 
+
 ![This is an image](https://github.com/MilosPopov007/UFOs/blob/main/Filters_HTML.png)
+
+In the [app.js](https://github.com/MilosPopov007/UFOs/blob/main/static/js/app.js) JavaScript file all necessary steps are taken to link our [data](https://github.com/MilosPopov007/UFOs/blob/main/static/js/data.js) to the [HTML](https://github.com/MilosPopov007/UFOs/blob/main/index.html) file.
+
+

@@ -31,3 +31,13 @@ BuildTable function was called to create the Table, loop was used to append valu
 ![This is an image](https://github.com/MilosPopov007/UFOs/blob/main/Java_png1.png)
 
 
+Using filters we want to save any data that matches the filter values.
+Crucial step in creating a Dynamic Web Page was to attach an event to listen for changes to each filter.
+
+An event listener in JavaScript is a function that initiates a predefined process if a specific event occurs.
+
+Our users can enter search criteria, "mouse click" or "keypress" will run our code in JavaScript that will show off the result in filtered Table data.
+
+
+![This is an image](https://github.com/MilosPopov007/UFOs/blob/main/Java_png2.png)
+

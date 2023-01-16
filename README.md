@@ -25,4 +25,9 @@ Each element in [HTML](https://github.com/MilosPopov007/UFOs/blob/main/index.htm
 
 In the [app.js](https://github.com/MilosPopov007/UFOs/blob/main/static/js/app.js) JavaScript file all necessary steps are taken to link our [data](https://github.com/MilosPopov007/UFOs/blob/main/static/js/data.js) to the [HTML](https://github.com/MilosPopov007/UFOs/blob/main/index.html) file.
 
+BuildTable function was called to create the Table, loop was used to append values (into our Table) of the data object and filter function to update the Table on user input.
+
+
+![This is an image](https://github.com/MilosPopov007/UFOs/blob/main/Java_png1.png)
+
 
